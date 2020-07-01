@@ -39518,7 +39518,7 @@ var render = function() {
               : _vm._e()
           ]),
           _vm._v(" "),
-          _vm.totalProducts > 15
+          _vm.totalProducts > _vm.limit
             ? _c("div", { staticClass: "card-footer" }, [
                 _vm.offset > 0
                   ? _c(

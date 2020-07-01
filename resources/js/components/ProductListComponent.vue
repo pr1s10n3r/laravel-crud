@@ -223,7 +223,7 @@ export default {
                 </div>
             </div>
 
-            <div v-if="totalProducts > 15" class="card-footer">
+            <div v-if="totalProducts > limit" class="card-footer">
                 <button
                     v-if="offset > 0"
                     type="button"
