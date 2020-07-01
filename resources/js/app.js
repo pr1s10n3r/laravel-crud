@@ -7,6 +7,7 @@
 require("./bootstrap");
 
 window.Vue = require("vue");
+import Vue2Filters from "vue2-filters";
 
 /**
  * The following block of code may be used to automatically register your
@@ -28,6 +29,12 @@ Vue.component(
     "product-list-component",
     require("./components/ProductListComponent.vue").default
 );
+Vue.component(
+    "edit-product-component",
+    require("./components/EditProductComponent.vue").default
+);
+
+Vue.use(Vue2Filters);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

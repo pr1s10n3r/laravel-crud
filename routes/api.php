@@ -20,7 +20,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::group(['prefix' => 'products', 'middleware' => 'auth:api'], function () {
     Route::get('/', 'ProductController@index');
-    Route::get('/{short}', 'ProductController@get_by_short');
-    Route::get('/{id}/threadCount', 'ProductController@get_thread_count');
+    Route::get('/search', 'ProductController@search');
     Route::post('/', 'ProductController@store');
+    Route::post('/{id}', 'ProductController@update');
+    Route::get('/count', 'ProductController@count');
+    Route::delete('/{id}', 'ProductController@destroy');
 });

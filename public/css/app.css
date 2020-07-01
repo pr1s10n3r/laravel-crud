@@ -10928,3 +10928,9 @@ a.text-dark:focus {
   }
 }
 
+@media (max-width: 576px) {
+  .cmb-10 {
+    margin-bottom: 10px;
+  }
+}
+

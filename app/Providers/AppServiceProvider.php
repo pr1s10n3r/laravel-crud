@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Blade;
+use NumberFormatter;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Blade::directive('money', function ($value) {
+            return '<?php
+                $fmt = numfmt_create(\'de_DE\', NumberFormatter::CURRENCY );
+                echo numfmt_format_currency($fmt, ' . $value . ', \'COP\');
+            ?>';
+        });
     }
 }
