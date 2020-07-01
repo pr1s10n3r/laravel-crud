@@ -6,7 +6,7 @@
 3. Instalar dependencias de PHP utilizando Composer
     - `$ composer install`
 4. Este proyecto fue desarrollando utilizando MariaDB, pero debería funcionar con cualquier motor de base de datos soportado por Laravel. Luego de instalar una base de datos y configurar el archivo .env se deben cargar los esquemas utilizando migraciones. Estos esquemas se cargan utilizando el siguiente comando:
-    - `$ php artisan migrate:fresh --`
+    - `$ php artisan migrate:fresh`
 5. Ahora se debe llenar la base de datos con algunos registros iniciales (un usuario administrador y unos productos).
     - `$ php artisan db:seed`
     - `$ php artisan db:seed --class=ProductSeeder`
