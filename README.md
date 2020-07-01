@@ -33,6 +33,4 @@ Por defecto se crea un usuario administrador llamado "Tester Junior". Sus creden
 
 # Dudas
 
----
-
 En caso de tener alguna duda sobre la instalación y/o el funciomaniento de este proyecto, puedes escribirme a [alvarostagg@protonmail.com](mailto:alvarostagg@protonmail.com)
