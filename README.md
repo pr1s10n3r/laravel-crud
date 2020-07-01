@@ -1,7 +1,5 @@
 # Instalación
 
----
-
 1. Clonar este proyecto
 2. Instalar las dependencias de JavaScript
     - `$ npm install`
@@ -24,8 +22,6 @@ Por defecto se crea un usuario administrador llamado "Tester Junior". Sus creden
 -   Contraseña: s3cr3t
 
 # Vista Previa
-
----
 
 ### Vista de la página principal
 
