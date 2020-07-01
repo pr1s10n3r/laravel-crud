@@ -14,6 +14,8 @@
     - `$ php artisan serve`
     - El comando de arriba lanzará un servidor de desarrollo en el puerto 8000.
 
+**Nota:** Todos los comandos deben ser ejecutados dentro del directorio del proyecto.
+
 # Usuario Administrador
 
 Por defecto se crea un usuario administrador llamado "Tester Junior". Sus credenciales son:
